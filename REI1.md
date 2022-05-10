@@ -1,4 +1,4 @@
-# C1 : Introdução
+
 
 
 ## Descrição do trabalho
@@ -42,13 +42,6 @@ Fornecedores:
 A empresa Pingo Doce que tem número 808 20 45 45, o fornecimento é feito da loja, mas perto do ginásio e o email é cliente@pingodoce.com.
 A empresa Zumub que tem o número 707019426, a loja fica localizada em Lisboa e o email é info@zumub.pt.
 
-
-
 ## Modelação do problema
 
-_(Apresentar os pressupostos utilizados na modelação do problema, estes pressupostos poderão não estar na descrição do trabalho)_
-
-
----
-[< Previous](rei00.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rei02.md)
-:--- | :---: | ---: 
+Temos problema com os fornecedores, os clientes não podem ter o mesmo numero de identificação e cada personal treinar tem um grupo de clientes que pode treinar ,tem um  nutricionista para todos os clientes.

@@ -46,7 +46,7 @@ Regista (Encomenda ; Funcionario)1/N
 
 Esta_Incerida (Produtos; Encomenda) M/N
 
-Enviado_Pelo (Encomenda; Fornecedor) N/1
+Enviado_Pelo (Encomenda; Fornecedor) N/M
 
 Forne-se ( Forncedor; Produtos)N/M
 

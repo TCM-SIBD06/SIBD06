@@ -41,12 +41,19 @@ Area(nome)
 Associações:
 
 Função_Exercida (Funcionario;Area) N/1
+
 Regista (Encomenda ; Funcionario)1/N
+
 Esta_Incerida (Produtos; Encomenda) M/N
+
 Enviado_Pelo (Encomenda; Fornecedor) N/1
+
 Forne-se ( Forncedor; Produtos)1/N
+
 Forne-se (Forncedor; Equipamentos) 1/N
+
 Concretrizado (Subscrição ; Pagamento) 1/1
+
 Executado (Subscrição ; Cliente) N/M
 
 

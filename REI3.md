@@ -1,7 +1,7 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-![Modelo EA](https://user-images.githubusercontent.com/96313629/167737625-0905ee0f-39cb-498d-a9d8-0d683953fc1f.png)
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/96313629/171834003-bb307d77-f478-47af-aa18-8a666a95a328.png)
 
 ## Descrição
 Entidades:

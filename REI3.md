@@ -6,63 +6,50 @@
 ## Descrição
 Entidades:
 
-Ginásio 
-
 Client
 
-FornecedorDeEquipamento
+Fornecedor
 
-FornecedorDeSuplemento
+Funcionarios
 
-FornecedorDeAgua
+Encomenda
 
-PersonaTreinar 
+Subscscrição                          
 
-Nutricionista 
+Pagamento 
 
-Empregada
+Equipamentos
 
-Rececionista
+Produto
 
-Atributo:
+Atributo :
 
-Ginásio ( nome ; localização; nºDeClientes ; empregados; nªTelefone)
+Cliente (nºCliente; morada ; nome ; idade; telefone) 
 
-Cliente (nºCliente; morada ; nªTelemovel)
+Funcionario (nªFuncionario; nome; telefone; morada; email)
 
-FornecedorDeEquipamento( nome ; localização; nªTelemovel ; email ; limiteDeFornecimento )
+Encomenda (nªEncomenda; data_ entrega; quantidade)
 
-FornecedorDeSuplemento ( nome; limiteDeFornecimento ; localização; nªTelemovel ; email )
+Produtos (nome)
 
-FornecedorDeAgua ( nome; limiteDeFornecimento ; localização; nªTelemovel  ;email )
+Forncedor (nome; morada; telefone; email )
 
-PersonalTreinar (nºDeFuncionario; nome; morada; nªTelemovel; email; areaEspecializada)
+Equipamento (nom ; preço; função)
 
-Nutricionista (nºDeFuncionario; nome; morada; nªTelemovel; email; areaEspecializada)
-
-Empregada (nºDeFuncionario; nome; morada; nªTelemovel; email)
-
-Rececionista (nºDeFuncionario; nome; morada; nªTelemovel; email)
+Area(nome)
 
 Associações:
 
-frequentaO (Cliente; Ginasio)
+Função_Exercida (Funcionario;Area) N/1
+Regista (Encomenda ; Funcionario)1/N
+Esta_Incerida (Produtos; Encomenda) M/N
+Enviado_Pelo (Encomenda; Fornecedor) N/1
+Forne-se ( Forncedor; Produtos)1/N
+Forne-se (Forncedor; Equipamentos) 1/N
+Concretrizado (Subscrição ; Pagamento) 1/1
+Executado (Subscrição ; Cliente) N/M
 
-fornece (fornecedorDeEquipamento; Ginásio )
 
-fornece (fornecedorDeSuplemento; Ginásio )
-
-fornece (fornecedorDeAgua; Ginásio )
-
-DaTreino ( PersonalTreinar ; Cliente )
-
-AtendeOs (Rececionista; Cliente)
-
-Consulta (Nutricionista ; Cliente)
-
-trabalhaNo (Cliente ; Ginásio)
-
-LimpaO (Empregada; Ginásio)
 
 
 

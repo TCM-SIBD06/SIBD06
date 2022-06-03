@@ -48,7 +48,7 @@ Esta_Incerida (Produtos; Encomenda) M/N
 
 Enviado_Pelo (Encomenda; Fornecedor) N/1
 
-Forne-se ( Forncedor; Produtos)1/N
+Forne-se ( Forncedor; Produtos)N/M
 
 Forne-se (Forncedor; Equipamentos) 1/N
 

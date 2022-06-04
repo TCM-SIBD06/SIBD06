@@ -4,7 +4,7 @@
 ![image](https://user-images.githubusercontent.com/96313629/171968346-a23bfd7d-07ed-4162-8788-8f9a616e3420.png)
 
 ## Descrição
-Entidades:
+###  Entidade:
 
 Client
 
@@ -22,7 +22,7 @@ Equipamentos
 
 Produto
 
-Atributo :
+### Atributos
 
 Cliente (nºCliente; morada ; nome ; idade; telefone) 
 
@@ -38,7 +38,7 @@ Equipamento (nom ; preço; função)
 
 Area(nome)
 
-Associações:
+### Associações
 
 Função_Exercida (Funcionario;Area) N/1
 

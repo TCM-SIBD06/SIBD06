@@ -16,6 +16,5 @@
 * Yanick Cruz [@YanickCruz](https://github.com/YanickCruz)
 
 
-_You can add a footer menu for navigation_ 
 < Previous | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd01.md)
 :--- | :---: | ---: 

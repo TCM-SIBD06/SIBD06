@@ -12,8 +12,7 @@ Esta tabela irá guardar informações sobre os clientes.
 | --- | --- | --- | --- | --- | --- |
 | **numeroCliente** | Número de cliente (auto-incrementado). | INT | - | Sim | Não |
 | **nome** | Nome do cliente. | VARCHAR(45) | - | Não | Não |
-| **telemovel** | Telemóvel do cliente. | INT | - |
- | Não |
+| **telemovel** | Telemóvel do cliente. | INT | - | Não |
 | **idade** | idade do cliente.|INT | - | Não |
 
 ## Restrições de Integridade

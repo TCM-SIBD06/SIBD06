@@ -339,8 +339,8 @@ Relação entre a  tabela  Assinatura e Pagamento
 
 | Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| Data_Inicio | data de inicio da assinatura | INT | Sim | Não | 
-| Data_ Pagamento | data de  pagamento | INT | Sim | Não | 
+| Data_Inicio | data de inicio da assinatura | INT | - | Sim | Não | 
+| Data_ Pagamento | data de  pagamento | INT | - | Sim | Não | 
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 

@@ -20,14 +20,14 @@ Executado (Assinatura→#_data início_ → Cliente, _ _ morada, nome, idade, te
 ## Normalização do Esquema Relacional
 Dependências Funcionais
 
-Tabela Clientes:
+1- Tabela Clientes:
+
 (DF1) NºCliente→ nome
 
 (DF2) NºCliente→ idade, morada, telefone
 
+2- Tabela Funcionários:
 
-
-Tabela Funcionários:
 (DF1) NºFuncionário→ nome
 
 (DF2) NºFuncionário→ telefone, morada
@@ -36,128 +36,125 @@ Tabela Funcionários:
 
 (DF4) #areaNome→ nome, telefone, morada
 
+3- Tabela Encomendas:
 
-
-Tabela Encomendas:
 (DF1) NºEncomenda→ Data entrega
 
 (DF2) NºEncomenda→ Quantidade
 
 (DF3) NºEncomenda, #NºFuncionario→ Data entrega, Quantidade
 
+4- Tabela Fornecedores:
 
-
-Tabela Fornecedores:
 (DF1) nome→ morada
 
 (DF2) nome→ telefone, email
 
+5- Tabela Equipamentos:
 
-
-Tabela Equipamentos:
 (DF1) nome→ preço
 
 (DF2) nome→ função
 
 (DF3) nome, #fornecedorNome→ preço, função
 
-
-
 Normalização
 
 Tabela Clientes:
 
-NF
+1- NF
+
 Clientes (NºClientes, nome, idade, morada, telefone
 
 Chaves Candidatas: (NºClientes, nome) (NºClientes, idade, morada, telefone)
 
+2- NF
 
-
-
-
-NF
 Clientes (#NºClientes→idade, morada, telefone)
 
 Chaves Candidatas: (NºClientes)
 
-NF
+3- NF
+
 (Sem alterações)
 
-NF
+4- NF
+
 (Sem alterações)
-
-
 
 Tabela Funcionários:
 
-NF
+1- NF
+
 Funcionário (NºFuncionario, nome, telefone, morada)
 
 Chaves Candidatas: (NºFuncionario, nome) (NºFuncionario, telefone, morada)
 
-NF
+2- NF
+
 Funcionário (#NºFuncionario→ telefone, morada)
 
 Chave Candidatas:(NºFuncionario)
 
-NF
+3- NF
+
 Funcionário (#areaNome→nome, telefone, morada)
 
 Chaves Candidatas (areaNome)
 
-NF
+4- NF
+
 Funcionário (#areaNome→ nome)
 
 Chaves Candidatas (areaNome)
 
-
-
 Tabela Encomendas:
 
-NF
+1- NF
+
 Encomendas (NºEncomenda, data entrega, quantidade)
 
 Chaves Candidatas (NºEncomenda, data entrega) (NºEncomenda, quantidade)
 
-NF
+2- NF
+
 Encomendas (#NºEncomenda→ quantidade)
 
 Chaves Candidatas (NºEncomenda)
 
+3- NF
 
-
-
-
-NF
 Encomendas (#NºFuncionario→data entrega, quantidade)
 
 Chaves Candidatas (NºFuncionario)
 
-NF
+4- NF
+
 Encomendas (#NºFuncionario→quantidade)
 
 Chaves Candidatas (NºFuncionario)
 
-
-
 Tabela Fornecedor:
 
-NF
+1- NF
+
 Fornecedor (nome, morada, telefone, email)
 
 Chaves Candidatas (nome, morada) (nome, telefone, email)
 
-NF
+2- NF
+
 Fornecedor (nome→ telefone, email)
 
 Chaves Candidatas (nome)
 
-NF
- (Sem alterações)
+3- NF
 
-NF
-(Sem alterações
+(Sem alterações)
+
+4- NF
+
+(Sem alterações)
 
 Tabela  Equipamentos :
 

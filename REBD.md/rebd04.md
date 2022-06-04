@@ -11,7 +11,7 @@ Esta tabela irá guardar informações sobre os clientes.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **nºClinte**| Numero do clinete| INT | - | Sim | Não |
+| **nºCliente** | numero client | INT |  - | Sim |Não |
 | **nome** | Nome do cliente. | VARCHAR(45) | - | Não | Não |
 | **telemovel** | Telemóvel do cliente. | INT | - | Não | Não |
 | **Idade** | idade  do  cliente.  | INT | -| Não | Não |
@@ -24,82 +24,172 @@ Esta tabela irá guardar informações sobre os clientes.
 | --------- |
 | nºCliente
 
-- **Unicidade** (valores únicos)*:
 
-| Nome        | Coluna(s) | Indexar |
-| ----------- | --------- | ------- |
-| nome_unique | nome      | Sim     |
 
-- **Referêncial** (chaves estrangeiras)*:
-
-| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
-| ----- | --------- | ------------------- | ------------------------- | ------- |
-| ta_fk | tipo      | Tabela_c            | id                        | Não     |
-
-- **Atributos** (check)*:
-
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
-
-- **Outros Indices***:
-
-| Nome | Coluna(s) |
-| ---- | --------- |
-|      |           |
-
-  *Remover se não existir.
-
-### Tabela_b
+### Funcionarrios 
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Descrição da Tabela B
+Descrição dos funcinario 
 
 #### COLUNAS <!-- omit in toc -->
 
 | Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| id       | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| data     | Data do registo           | DATE        | now()       | Não        | Não  |
-| nome     | Nome do registo           | VARCHAR(50) | -           | Não        | Não  |
-| conteudo | Conteudo do documento     | TEXT        | -           | Não        | Sim  |
-| tipo     | tipo de testes            | BIGINT      | -           | Não        | Sim  |
-
+| NºFuncionarios  | numero de identi dos funcinarios  | INT | Sim  | Não |
+| nome | nome do funcionario | VARCHAR |  - | Não | Não |
+|  morada | morada do funcionario | VARCHAR (45) | - | Não | Não |
+| areaNome | profição dos funcionario | INT | - | Sim | Não |
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
 | Coluna(s) |
 | --------- |
-| id        |
-
-- **Unicidade** (valores únicos)*:
-
-| Nome        | Coluna(s) | Indexar |
-| ----------- | --------- | ------- |
-| nome_unique | nome      | Sim     |
+|NºFuncionario |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
-| ta_fk | tipo      | Tabela_c            | id                        | Não     |
+| FK\_Area\_ nome | nome profição | Area | nome |não |
 
-- **Atributos** (check)*:
+### Area
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
+#### DESCRIÇÃO <!-- omit in toc -->
 
-- **Outros Indices***:
+Descrição das areazs de profição 
 
-| Nome | Coluna(s) |
-| ---- | --------- |
-|      |           |
+#### COLUNAS <!-- omit in toc -->
 
-  *Remover se não existir.
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nome | nomde da area de  trabalho | INT| - | sim |Não |
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| Nome |
+
+### Encomenda 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Descrição da tabela Encomenda 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+|  NªEncomenda | numde de encomenda | INT |  - | Não | Não |
+| Dat _ Entrega | data de entrega dos produtos | - | Sim | Não |
+| Quantidade |  quantidade de  encomendas  | INT | - | sim | Não | 
+|NºFuncionario | Numero dos funcionario | INT  | - | Sim  | Não | 
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+|NºEncomenda |
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| ----- | --------- | ------------------- | ------------------------- | ------- |
+| FK\_Funcionarios_ NºFuncionarios | Nº Funcionarios | Funcionarios | Nº Funcionarios | Não  |
+
+# ## Fornecedor 
+
+## Descrição
+
+Esta tabela irá guardar informações sobre os  Fornecedores.
+
+## Colunas
+
+| **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
+| --- | --- | --- | --- | --- | --- |
+| **nome** | Nome do fornecedor | VARCHAR(200) | - | Sim | Não |
+| **morada** | Morada do fornecedor | VArCHAR (200) | - | Não | Não |
+| **telemovel** | Telemóvel do fornecedor | VARCHAR (45) | - | Não | Não |
+| **Email** | Email do f ornecedor | VARCHAR (45 ) | - | Não | Sim | 
+
+## Restrições de Integridade
+
+
+### Chave primária
+
+| **Coluna(s)** |
+| --- |
+| Nome  |
+
+### Produtos 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Descrição dos Produtos 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nome | nomde dos produtos | INT | - | Sim | Não |
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| Nome |
+
+### Equipamentos 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Descrição da tabela  Equipamentso 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+|  Nome | nome  dos equipamentos | VAUCHAR | - | Sim | Não | 
+| preço | preço dos equipamentos | VAUCHAR | - | Não | Não | 
+| função | função dos equipamento| VAUCHAR | - | Não | Sim | 
+| FornecedorNome |nome dos fornecedors | INT | - | Sim | Não | 
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+|nome |
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| ----- | --------- | ------------------- | ------------------------- | ------- |
+| FK\_Fornecedor_Nome  | Nome | Fornecedor | nome | não | 
+
+### Pagamento
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Descrição dos  Pagamentso 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| data_ Pagamento | data dos pagamentso | INT | - | Sim | Não | 
+| Tipo_ Pagamento |  tipo  de pagamento feito | VAUCHAR | - | Não | Não | 
+| valor | 
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| Nome |
 ## Vistas
 
 _(Inserir a descrição e estrutura das vista, caso existam.)_

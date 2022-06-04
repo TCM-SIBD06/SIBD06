@@ -55,3 +55,8 @@ Forne-se (Forncedor; Equipamentos) 1/N
 Concretrizado (Subscrição ; Pagamento) 1/1
 
 Executado (Subscrição ; Cliente) N/M
+
+## Regras de negócio adicionais (Restrições)
+* Só é possivel ser feito as  assinaturas  dos clientes se isso for feito por um funcionario e esse funcionario tem que ser a reccecionita.
+---
+[< Previous](rebd01.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd03.md)

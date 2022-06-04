@@ -182,17 +182,182 @@ Descrição dos  Pagamentso
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | data_ Pagamento | data dos pagamentso | INT | - | Sim | Não | 
 | Tipo_ Pagamento |  tipo  de pagamento feito | VAUCHAR | - | Não | Não | 
-| valor | 
+| valor | valo  da Assinatura | VAUCHAR | - | Sim | Não | 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
 | Coluna(s) |
 | --------- |
-| Nome |
-## Vistas
+| data Pagamento | 
 
-_(Inserir a descrição e estrutura das vista, caso existam.)_
+### Assinatura 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Descrição dos  Pagamentso 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| data_ inicio | data que foi afetuado a assinatura |  INT | -  | Não | Não | 
+| data_fim| data que a assinatura expira | INT | - | Sim | Não | 
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| data_ inicio | 
+
+## Relações
+
+### EstaIncerido 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Relação entre a  tabela Encomenda e  Produtos 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+|NºEncomenda | numero da encomenda | INT | - | Sim | No| 
+| ProdutosNome | nome dos produtos | INT | - | Sim | Não
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+|Nº Encomenda | 
+| Produtos Nome | 
+
+- **Unicidade** (valores únicos)*:
+
+| Nome        | Coluna(s) | Indexar |
+| ----------- | --------- | ------- |
+| Encomenda | Nº Econmenda | Não | 
+| Produtos | Nome | Não | 
+
+### EstaIncerido 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Relação entre a  tabela Encomenda e Equipamentos . 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+|NºEncomenda | numero da encomenda | INT | - | Sim | No| 
+| Equipamento Nome| nome do equipamento| INT | - | Sim | Não | 
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+|Nº Encomenda | 
+| Equipamento Nome| 
+
+- **Unicidade** (valores únicos)*:
+
+| Nome        | Coluna(s) | Indexar |
+| ----------- | --------- | ------- |
+| Encomenda | Nº Econmenda | Não | 
+|  Equipamento | nom| Não |
+
+### Enviado Pelo 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Relação entre a  tabela Encomenda e Fornecedor 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+|NºEncomenda | numero da encomenda | INT | - | Sim | No| 
+| Fornecedor Nome | nom do fornecedor | INT | - | Sim | Não | 
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+|Nº Encomenda | 
+| Nome Fornecedor |
+
+- **Unicidade** (valores únicos)*:
+
+| Nome        | Coluna(s) | Indexar |
+| ----------- | --------- | ------- |
+| Encomenda | Nº Econmenda | Não | 
+|  Fornecedor | Nome | Não | 
+
+### Forne-se 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Relação entre a  tabela  produto  e fornecedor 
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+|Produto Nome| nome do produto | INTER | - | Sim |  Não | 
+| Fornecedor nome | nome do fornecedor | INTER | - | Não |  Não | 
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+|Nome Produto|
+|Nome Fornecedor |
+
+- **Unicidade** (valores únicos)*:
+
+| Nome        | Coluna(s) | Indexar |
+| ----------- | --------- | ------- |
+| Produto | Nome | Não | 
+|  Fornecedor | Nome | Não | 
+
+### Executado 
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Relação entre a  tabela  Assinatura e Pagamento
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| Data_Inicio | data de inicio da assinatura | INT | Sim | Não | 
+| Data_ Pagamento | data de  pagamento | INT | Sim | Não | 
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+|data_Inicio |
+|data_pagamento| 
+
+- **Unicidade** (valores únicos)*:
+
+| Nome        | Coluna(s) | Indexar |
+| ----------- | --------- | ------- |
+| Assinatura | data_Inicio| Não | 
+| Pagamento | data_Pagamento | Não | 
+
 
 ---
 | [< Previous](rebd03.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd05.md) |

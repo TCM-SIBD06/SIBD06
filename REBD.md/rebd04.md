@@ -13,8 +13,8 @@ Esta tabela irá guardar informações sobre os clientes.
 | --- | --- | --- | --- | --- | --- |
 | **numeroCliente** | Número de cliente (auto-incrementado). | INT | - | Sim | Não |
 | **nome** | Nome do cliente. | VARCHAR(45) | - | Não | Não |
-| **telemovel** | Telemóvel do cliente. | INT | - | Não | Naõ |
-| ** idade** | idade do cliente  | INT | - | Não | Não |
+| **telemovel** | Telemóvel do cliente. | INT | - | Não | Não |
+| **Idade** | idade  do  cliente.  | INT | -| Não | Não |
 - [Relações](#relações)
   - [Tabela_a](#tabela_a)
   - [Tabela_b](#tabela_b)

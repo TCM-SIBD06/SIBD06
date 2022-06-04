@@ -11,32 +11,10 @@ Esta tabela irá guardar informações sobre os clientes.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **numeroCliente** | Número de cliente (auto-incrementado). | INT | - | Sim | Não |
+| **nºClinte**| Numero do clinete| INT | - | Sim | Não |
 | **nome** | Nome do cliente. | VARCHAR(45) | - | Não | Não |
 | **telemovel** | Telemóvel do cliente. | INT | - | Não | Não |
 | **Idade** | idade  do  cliente.  | INT | -| Não | Não |
-- [Relações](#relações)
-  - [Tabela_a](#tabela_a)
-  - [Tabela_b](#tabela_b)
-- [Vistas](#vistas)
-
-## Relações
-
-### Tabela_a
-
-#### DESCRIÇÃO <!-- omit in toc -->
-
-Descrição da Tabela A
-
-#### COLUNAS <!-- omit in toc -->
-
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| id       | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| data     | Data do registo           | DATE        | now()       | Não        | Não  |
-| nome     | Nome do registo           | VARCHAR(50) | -           | Não        | Não  |
-| conteudo | Conteudo do documento     | TEXT        | -           | Não        | Sim  |
-| tipo     | tipo de testes            | BIGINT      | -           | Não        | Sim  |
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
@@ -44,7 +22,7 @@ Descrição da Tabela A
 
 | Coluna(s) |
 | --------- |
-| id        |
+| nºCliente
 
 - **Unicidade** (valores únicos)*:
 

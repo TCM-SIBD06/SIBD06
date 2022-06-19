@@ -11,7 +11,7 @@ Esta tabela irá guardar informações sobre os clientes.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **nºCliente** | numero client | INT |  - | Sim |Não |
+| **nCliente** | numero cliente | INT |  - | Sim |Não |
 | **nome** | Nome do cliente. | VARCHAR(45) | - | Não | Não |
 | **telemovel** | Telemóvel do cliente. | INT | - | Não | Não |
 | **Idade** | idade  do  cliente.  | INT | -| Não | Não |
@@ -20,37 +20,37 @@ Esta tabela irá guardar informações sobre os clientes.
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
 | nºCliente
 
 
 
-### Funcionarrios 
+### Funcionarios 
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Descrição dos funcinario 
+Descrição dos funcinarios 
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| NºFuncionarios  | numero de identi dos funcinarios  | INT | Sim  | Não |
-| nome | nome do funcionario | VARCHAR |  - | Não | Não |
-|  morada | morada do funcionario | VARCHAR (45) | - | Não | Não |
-| areaNome | profição dos funcionario | INT | - | Sim | Não |
+| **NFuncionarios**  | numero de identidade dos funcinarios  | INT | Sim  | Não |
+| **nome** | nome do funcionario | VARCHAR |  - | Não | Não |
+|**morada** | morada do funcionario | VARCHAR (45) | - | Não | Não |
+| **areaNome** | profissão dos funcionario | INT | - | Sim | Não |
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
-|NºFuncionario |
+|NFuncionario |
 
 - **Referêncial** (chaves estrangeiras)*:
 
-| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| **Nome**  | **Coluna(s)** | **Tabela referênciada** | **Coluna(s) referênciada(s)** | **Indexar** |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
 | FK\_Area\_ nome | nome profição | Area | nome |não |
 
@@ -58,18 +58,18 @@ Descrição dos funcinario
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Descrição das areazs de profição 
+Descrição das areas de profissão
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático**| **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| nome | nomde da area de  trabalho | INT| - | sim |Não |
+| nome | nome da area de  trabalho | INT| - | sim |Não |
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
 | Nome |
 
@@ -81,24 +81,24 @@ Descrição da tabela Encomenda
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-|  NªEncomenda | numde de encomenda | INT |  - | Não | Não |
-| Dat _ Entrega | data de entrega dos produtos | - | Sim | Não |
-| Quantidade |  quantidade de  encomendas  | INT | - | sim | Não | 
-|NºFuncionario | Numero dos funcionario | INT  | - | Sim  | Não | 
+|  **NEncomenda** | nome de encomenda | INT |  - | Não | Não |
+| **Data_ Entrega** | data de entrega dos produtos | - | Sim | Não |
+| **Quantidade** |  quantidade de  encomendas  | INT | - | sim | Não | 
+|**NFuncionario** | Numero dos funcionario | INT  | - | Sim  | Não | 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
-|NºEncomenda |
+|NEncomenda |
 - **Referêncial** (chaves estrangeiras)*:
 
-| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| **Nome**  | **Coluna(s) | **Tabela referênciada** | **Coluna(s) referênciada(s)** | **Indexar** |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
-| FK\_Funcionarios_ NºFuncionarios | Nº Funcionarios | Funcionarios | Nº Funcionarios | Não  |
+| FK\_Funcionarios_ NFuncionarios | NFuncionarios | Funcionarios | NFuncionarios | Não  |
 
 # ## Fornecedor 
 
@@ -113,7 +113,7 @@ Esta tabela irá guardar informações sobre os  Fornecedores.
 | **nome** | Nome do fornecedor | VARCHAR(200) | - | Sim | Não |
 | **morada** | Morada do fornecedor | VArCHAR (200) | - | Não | Não |
 | **telemovel** | Telemóvel do fornecedor | VARCHAR (45) | - | Não | Não |
-| **Email** | Email do f ornecedor | VARCHAR (45 ) | - | Não | Sim | 
+| **Email** | Email do fornecedor | VARCHAR (45 ) | - | Não | Sim | 
 
 ## Restrições de Integridade
 
@@ -132,14 +132,14 @@ Descrição dos Produtos
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático**| **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| nome | nomde dos produtos | INT | - | Sim | Não |
+| nome | nome dos produtos | INT | - | Sim | Não |
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
 | Nome |
 
@@ -151,22 +151,22 @@ Descrição da tabela  Equipamentso
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-|  Nome | nome  dos equipamentos | VAUCHAR | - | Sim | Não | 
-| preço | preço dos equipamentos | VAUCHAR | - | Não | Não | 
-| função | função dos equipamento| VAUCHAR | - | Não | Sim | 
-| FornecedorNome |nome dos fornecedors | INT | - | Sim | Não | 
+|  **Nome | nome  dos equipamentos | VAUCHAR | - | Sim | Não | 
+| **preço** | preço dos equipamentos | VAUCHAR | - | Não | Não | 
+| **função** | função dos equipamento| VAUCHAR | - | Não | Sim | 
+| **FornecedorNome** |nome dos fornecedores | INT | - | Sim | Não | 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
 |nome |
 - **Referêncial** (chaves estrangeiras)*:
 
-| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| **Nome**  | **Coluna(s)** | **Tabela referênciada** | **Coluna(s) referênciada(s)** | **Indexar** |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
 | FK\_Fornecedor_Nome  | Nome | Fornecedor | nome | não | 
 
@@ -174,32 +174,32 @@ Descrição da tabela  Equipamentso
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Descrição dos  Pagamentso 
+Descrição dos  Pagamentos 
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| data_ Pagamento | data dos pagamentso | INT | - | Sim | Não | 
+| data_ Pagamento | data dos pagamentos | INT | - | Sim | Não | 
 | Tipo_ Pagamento |  tipo  de pagamento feito | VAUCHAR | - | Não | Não | 
-| valor | valo  da Assinatura | VAUCHAR | - | Sim | Não | 
+| valor | valor  da Assinatura | VAUCHAR | - | Sim | Não | 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
 | data Pagamento | 
 
-### Assinatura 
+### Subscrição  
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Descrição dos  Pagamentso 
+Descrição das Subscrição 
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | data_ inicio | data que foi afetuado a assinatura |  INT | -  | Não | Não | 
 | data_fim| data que a assinatura expira | INT | - | Sim | Não | 
@@ -207,7 +207,7 @@ Descrição dos  Pagamentso
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
 | data_ inicio | 
 
@@ -221,28 +221,28 @@ Relação entre a  tabela Encomenda e  Produtos
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-|NºEncomenda | numero da encomenda | INT | - | Sim | No| 
-| ProdutosNome | nome dos produtos | INT | - | Sim | Não
+|NEncomenda | numero da encomenda | INT | - | Sim | Nao| 
+| ProdutosNome | nome dos produtos | INT | - | Sim | Não |
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
-|Nº Encomenda | 
+|NEncomenda | 
 | Produtos Nome | 
 
 - **Unicidade** (valores únicos)*:
 
-| Nome        | Coluna(s) | Indexar |
+| **Nome**        | **Coluna(s)** | **Indexar** |
 | ----------- | --------- | ------- |
-| Encomenda | Nº Econmenda | Não | 
+| Encomenda | NEconmenda | Não | 
 | Produtos | Nome | Não | 
 
-### EstaIncerido 
+### Tem
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
@@ -250,10 +250,10 @@ Relação entre a  tabela Encomenda e Equipamentos .
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-|NºEncomenda | numero da encomenda | INT | - | Sim | No| 
-| Equipamento Nome| nome do equipamento| INT | - | Sim | Não | 
+|NEncomenda | numero da encomenda | INT | - | Sim | No| 
+| EquipamentoNome| nome do equipamento| INT | - | Sim | Não | 
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
@@ -261,17 +261,17 @@ Relação entre a  tabela Encomenda e Equipamentos .
 
 | Coluna(s) |
 | --------- |
-|Nº Encomenda | 
-| Equipamento Nome| 
+|NEncomenda | 
+| EquipamentoNome| 
 
 - **Unicidade** (valores únicos)*:
 
-| Nome        | Coluna(s) | Indexar |
+| **Nome**        | **Coluna(s)** | **Indexar** |
 | ----------- | --------- | ------- |
-| Encomenda | Nº Econmenda | Não | 
-|  Equipamento | nom| Não |
+| Encomenda | NEconmenda | Não | 
+|  Equipamento | nome| Não |
 
-### Enviado Pelo 
+### EnviadoPelo 
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
@@ -279,25 +279,25 @@ Relação entre a  tabela Encomenda e Fornecedor
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-|NºEncomenda | numero da encomenda | INT | - | Sim | No| 
-| Fornecedor Nome | nom do fornecedor | INT | - | Sim | Não | 
+|NEncomenda | numero da encomenda | INT | - | Sim | No| 
+| FornecedorNome | nome do fornecedor | INT | - | Sim | Não | 
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
-|Nº Encomenda | 
-| Nome Fornecedor |
+|NEncomenda | 
+| NomeFornecedor |
 
 - **Unicidade** (valores únicos)*:
 
-| Nome        | Coluna(s) | Indexar |
+| **Nome**        | **Coluna(s)** | **Indexar** |
 | ----------- | --------- | ------- |
-| Encomenda | Nº Econmenda | Não | 
+| Encomenda | NEconmenda | Não | 
 |  Fornecedor | Nome | Não | 
 
 ### Forne-se 
@@ -308,55 +308,55 @@ Relação entre a  tabela  produto  e fornecedor
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-|Produto Nome| nome do produto | INTER | - | Sim |  Não | 
+|ProdutoNome| nome do produto | INTER | - | Sim |  Não | 
 | Fornecedor nome | nome do fornecedor | INTER | - | Não |  Não | 
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s)** |
 | --------- |
-|Nome Produto|
-|Nome Fornecedor |
+|NomeProduto|
+|NomeFornecedor |
 
 - **Unicidade** (valores únicos)*:
 
-| Nome        | Coluna(s) | Indexar |
+| **Nome**        | **Coluna(s)** | **Indexar** |
 | ----------- | --------- | ------- |
 | Produto | Nome | Não | 
 |  Fornecedor | Nome | Não | 
 
-### Executado 
+### RealizadoPor
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Relação entre a  tabela  Assinatura e Pagamento
+Relação entre a  tabela  Subscrição e Pagamento
 
 #### COLUNAS <!-- omit in toc -->
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+|  **Nome**     | **Descrição**                 | **Domínio**     | **por Omissão** | **Automático** | **Nulo** |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| Data_Inicio | data de inicio da assinatura | INT | - | Sim | Não | 
-| Data_ Pagamento | data de  pagamento | INT | - | Sim | Não | 
-
+| **Data_Inicio** | data de inicio da assinatura | INT | - | Sim | Não | 
+| **Data_ Pagamento** | data de  pagamento | INT | - | Sim | Não | 
+| **idSubscrição** | identicação do pagamento | INT | - | Sim | Não | 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
 - **Chave Primária**: 
 
-| Coluna(s) |
+| **Coluna(s**) |
 | --------- |
-|data_Inicio |
-|data_pagamento| 
+|id|
+| idSubscrição| 
 
 - **Unicidade** (valores únicos)*:
 
-| Nome        | Coluna(s) | Indexar |
+| **Nome**        | **Coluna(s)** | **Indexar** |
 | ----------- | --------- | ------- |
-| Assinatura | data_Inicio| Não | 
-| Pagamento | data_Pagamento | Não | 
+| Subscrição | idSubscrição| Não | 
+| Pagamento |id | Não | 
 
 
 ---

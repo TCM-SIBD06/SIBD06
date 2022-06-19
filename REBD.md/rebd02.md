@@ -1,7 +1,7 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-![image](https://user-images.githubusercontent.com/96313629/171968346-a23bfd7d-07ed-4162-8788-8f9a616e3420.png)
+![DiagramaFinal ](https://user-images.githubusercontent.com/96313629/174460702-6623edf5-39ab-42ce-aa27-132e6aec120b.png)
 
 ## Descrição
 ###  Entidade:

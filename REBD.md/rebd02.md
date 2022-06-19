@@ -27,21 +27,21 @@ Pagamento (_id_, data , valor)
 
 ### Associações
 
-Função_Exercida (Funcionarios;Area) N/1
+Função_Exercida (Funcionarios;Area) N:1 Total/Total
 
-Regista (Encomenda ; Funcionarios)1/N
+Regista (Encomenda ; Funcionarios)1:N total/parcial
 
-Esta_Incerida (Produtos; Encomenda) M/N
+Esta_Incerida (Produtos; Encomenda) M:N parcial/Total
 
-Enviado_Pelo (Encomenda; Fornecedor) N/M
+Enviado_Pelo (Encomenda; Fornecedor) N:M  parcial/parcial
 
-Forne-se ( Forncedor; Produtos)N/M
+Forne-se ( Forncedor; Produtos)N/M Total/parcial
 
-Tem (Forncedor; Equipamentos) 1/N
+Tem (Forncedor; Equipamentos) 1/N Total/parcial
 
-RealizadoPor (Subscrição ; Pagamento) 1/1
+RealizadoPor (Subscrição ; Pagamento) 1/1 Total/Total
 
-ExecutadoPelo (Subscrição ; Clientes) N/M
+ExecutadoPelo (Subscrição ; Clientes) N/M  Total/Total
 
 ## Regras de negócio adicionais (Restrições)
 * Só é possivel ser feito as  assinaturas  dos clientes se isso for feito por um funcionario e esse funcionario tem que ser a reccecionita.

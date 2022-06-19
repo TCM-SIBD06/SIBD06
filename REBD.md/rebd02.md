@@ -1,11 +1,13 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-![DiagramaFinal ](https://user-images.githubusercontent.com/96313629/174460991-bcaed8d5-dc4f-412f-89a4-358e01ea55e0.png)
+
 ## Descrição
 
 
 ### Atributos
+
+Subscrição(_idSubscrição_ , data_inicio , data_final)
 
 Clientes (_ncliente_ , nome , morada , idade , telefone) 
 
@@ -15,11 +17,13 @@ Encomenda (_nEncomenda_ , data entrega , quantidade)
 
 Produtos (_nome_)
 
-Forncedor (_nome_ , morada , telefone , email)
+Fornecedor (_nome_ , morada , telefone , email)
 
 Equipamento (_nome_ , preço , função)
 
 Area (_nome_)
+
+Pagamento (_id_, data , valor)
 
 ### Associações
 

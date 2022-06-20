@@ -2,7 +2,10 @@
 
 ## DDL
 
-CREATE DATABASE IF NOT EXISTS MarleyLizardo Yanick Cruz; USE MarleyLizardo Yanick Cruz;
+CREATE DATABASE IF NOT EXISTS `MarleyLizardo Yanick Cruz`;
+USE `MarleyLizardo Yanick Cruz`;
+
+
 DROP TABLE IF EXISTS Cliente;
 DROP TABLE IF EXISTS Funcionario;
 DROP TABLE IF EXISTS Area;
@@ -60,6 +63,8 @@ FROM encomenda e
 left join fornecedor f on f.NumFornecedor = e.NumFornecedor ; 
 
 ## DML
+
+USE `MarleyLizardo Yanick Cruz`;
 
 INSERT INTO Cliente (Numcliente, Nome , Idade, morada, telefone) VALUES (1,'João Rosário',24,'Alto de Pêga','914261225'), (2,'Maria Sousa',20,'Araújo','981595924') ,(3,'Carlos Andrade',30,'Árvore','958624759'),
 (4,'Leonor Vicente',18,'Baguim','963568987' ), (5,'Marley Cardoso',25,'Bolhão','968475123'), (6,'Paula Maia', 17,'Botica','987654213' ), (7,'Lucas Basto',26,'Brito Capelo','974854623' ),
